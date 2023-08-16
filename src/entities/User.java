@@ -1,12 +1,12 @@
 package entities;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.UUID;
 
 public class User {
+  private UUID id;
   private String name;
   private Double spending;
-  private List<Product> productsBuyeds = new ArrayList<>();
+  
 
   public User(String name, Double spending) {
     this.name = name;
@@ -19,5 +19,9 @@ public class User {
 
   public Double getSpending() {
     return spending;
+  }
+
+  public UUID getId() {
+    return id;
   }
 }
