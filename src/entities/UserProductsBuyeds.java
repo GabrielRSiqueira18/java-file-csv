@@ -23,5 +23,12 @@ public class UserProductsBuyeds {
     return quantity;
   }
 
+  public void addQuantity(Integer quantity) {
+    this.quantity += quantity;
+  }
 
+
+  public void addPrice(Double price) {
+    this.price += price;
+  }
 }
